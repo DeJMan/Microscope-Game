@@ -12,16 +12,18 @@ public class ObjSpawner : MonoBehaviour
 	
 	public int Durationcounter = 1;
 	public float varspeed;
+	
 	public void Start()
     {
         counter = maxcounter;
 		if(varspeed < 0.3f)
-			{
-				
+		{
+			
 			varspeed += 0.3f;
-				}
+		}
 		createnew();
 	}
+	
     public void rundowncounter()
     {
 		counter--;
@@ -31,18 +33,19 @@ public class ObjSpawner : MonoBehaviour
 			if(maxcounter <= 10)
 			{
 				maxcounter = 10;
-				}
+			}
 			counter = maxcounter;
 			Durationcounter++;
 			varspeed = Durationcounter/50f;
 			if(varspeed < 0.3f)
 			{
 				
-			varspeed += 0.3f;
-				}
+				varspeed += 0.3f;
+			}
 			createnew();
 		}
 	}
+	
     // Update is called once per frame
     public void Update()
     {

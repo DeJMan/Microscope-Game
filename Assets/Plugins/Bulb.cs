@@ -11,13 +11,15 @@ public class Bulb : MonoBehaviour
 	public lookat l;
 	public GameObject pref;
 	public GameObject bloop;
+	
 	void Start()
 	{
 		GameObject go = GameObject.FindWithTag("manager");
 		s = go.GetComponent<Score>();
 		GameObject gs = GameObject.FindWithTag("looker");
 		l = gs.GetComponent<lookat>();
-		}
+	}
+	
     // Update is called once per frame
     void Update()
     {
@@ -26,19 +28,18 @@ public class Bulb : MonoBehaviour
 		if(transform.position.z > 50f)
 		{
 			Destroy(gameObject);
-			}
+		}
 	}
+	
 	void OnTriggerEnter(Collider other)
-    {
-        
+    {        
 		if(other.tag == "dj")
 		{
-			Debug.Log(other);
 			s.Scoreincrease();
 			l.lookatcam();
 			GameObject a = Instantiate(pref, transform.position, Quaternion.identity);
 			GameObject b = Instantiate(bloop, transform.position, Quaternion.identity);
-		Destroy(gameObject);
+			Destroy(gameObject);
 		}
-    }
+	}
 }

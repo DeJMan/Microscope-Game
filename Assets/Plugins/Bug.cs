@@ -15,10 +15,9 @@ public class Bug : MonoBehaviour
 		GameObject go = GameObject.FindWithTag("manager");
 		s = go.GetComponent<Score>();
 		GameObject gs = GameObject.FindWithTag("looker");
-		l = gs.GetComponent<lookat>();
-		
-		}
-
+		l = gs.GetComponent<lookat>();		
+	}
+	
     // Update is called once per frame
     void Update()
     {
@@ -26,21 +25,20 @@ public class Bug : MonoBehaviour
 		if(transform.position.z > 50f)
 		{
 			Destroy(gameObject);
-			}
-    }
+		}
+	}
+	
 	void OnTriggerEnter(Collider other)
-    {
-        
+    {        
 		if(other.tag == "dj")
 		{
-			Debug.Log("bug hut" + other);
 			s.Healthdecrease();
 			l.lookatcamangri();
 			//instantiate fireworks  prefab
 			
 			GameObject a = Instantiate(pref, transform.position, Quaternion.identity);
 			GameObject b = Instantiate(bloop, transform.position, Quaternion.identity);
-		Destroy(gameObject);
+			Destroy(gameObject);
 		}
-    }
+	}
 }

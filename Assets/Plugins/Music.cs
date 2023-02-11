@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-public class Music : MonoBehaviour {
+public class Music : MonoBehaviour 
+{
 	public List<Songs> songList = new List<Songs>();
 	AudioSource asrc;
 	
@@ -65,10 +66,10 @@ public class Music : MonoBehaviour {
 			}
 		}
 	}
-		void StartAudio()
-		{
-			//stop music
-			asrc.Stop();
+	void StartAudio()
+	{
+		//stop music
+		asrc.Stop();
 		//set music clip
 		asrc.clip = songList[vCurrent].song;
 		asrc.Play();

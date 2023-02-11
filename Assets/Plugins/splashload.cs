@@ -7,14 +7,7 @@ public class splashload : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
-    {
-        
+    {        
         SceneManager.LoadScene("menu", LoadSceneMode.Single);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

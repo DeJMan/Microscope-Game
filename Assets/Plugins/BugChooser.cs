@@ -11,23 +11,20 @@ public class BugChooser : MonoBehaviour
     void Start()
     {
         float aa = Random.Range(10f, 100.0f);
-	if(aa <= 33f)
-	{
-		Destroy(two);
-		Destroy(tre);
+		if(aa <= 33f)
+		{
+			Destroy(two);
+			Destroy(tre);
 		}
-	else if(aa >= 66)
-	{
-		Destroy(one);
-		Destroy(tre);
-		
+		else if(aa >= 66)
+		{
+			Destroy(one);
+			Destroy(tre);			
 		}
-	else
-	{
-		Destroy(two);
-		Destroy(one);
-		
+		else
+		{
+			Destroy(two);
+			Destroy(one);			
 		}
-    }
-
+	}	
 }

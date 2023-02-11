@@ -8,14 +8,10 @@ public class LoadGame : MonoBehaviour
     public void loadStart()
     {
         SceneManager.LoadScene("main", LoadSceneMode.Single);
-    }
+	}
 	
 	public void loadmainmenu()
     {
-	Debug.Log("ye");
         SceneManager.LoadScene("menu", LoadSceneMode.Single);
-    }
-
-
-    
+	}
 }

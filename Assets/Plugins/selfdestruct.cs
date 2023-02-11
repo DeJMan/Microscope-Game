@@ -8,12 +8,13 @@ public class selfdestruct : MonoBehaviour
     void Start()
     {
         StartCoroutine(ExampleCoroutine());
-    }
-
-   IEnumerator ExampleCoroutine()
-    {
+	}
 	
-        //yield on a new YieldInstruction that waits for 5 seconds.
+	IEnumerator ExampleCoroutine()
+    {
+		
+		//yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(3);
-Destroy(gameObject);
-}}
+		Destroy(gameObject);
+	}
+}
