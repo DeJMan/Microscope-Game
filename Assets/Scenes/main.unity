@@ -3031,6 +3031,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  horizontalLimits:
+    min: -10
+    max: 10
+  verticalLimits:
+    min: -10
+    max: 10
 --- !u!54 &1475864678
 Rigidbody:
   m_ObjectHideFlags: 0
