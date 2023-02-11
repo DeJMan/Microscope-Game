@@ -894,8 +894,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 280.74026, y: 35}
-  m_SizeDelta: {x: 528.7717, y: 74.6294}
+  m_AnchoredPosition: {x: 280.74026, y: 43}
+  m_SizeDelta: {x: 528.7717, y: 137.9472}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1166023797
 MonoBehaviour:
@@ -930,14 +930,25 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.73
-  m_Text: '
+  m_Text: 'Siri
 
     siri.itch.io
 
 
-    Music by KanxBoop
+    DeJMan
 
-    soundcloud.com/cody-shepherd-70388366'
+    dejmanofficial.itch.io
+
+
+    Music
+    by KanxBoop
+
+    soundcloud.com/cody-shepherd-70388366
+
+
+    v 1.1
+
+'
 --- !u!222 &1166023798
 CanvasRenderer:
   m_ObjectHideFlags: 0
