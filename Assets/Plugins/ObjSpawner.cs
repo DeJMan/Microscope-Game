@@ -55,7 +55,7 @@ public class ObjSpawner : MonoBehaviour
 	public void createnew()
 	{
 		float r = Random.Range(1f, 100f);
-		var position = new Vector3(Random.Range(-10.0f, 10.0f), Random.Range(-10.0f, 10.0f), -50f);
+		var position = new Vector3(Random.Range(-10.0f, 10.0f), Random.Range(-10.0f, 10.0f), -100f);
 		if(r <= 50f)
 		{
 			GameObject a = Instantiate(Bug, position, Quaternion.identity);

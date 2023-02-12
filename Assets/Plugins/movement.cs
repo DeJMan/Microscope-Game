@@ -22,6 +22,13 @@ public class movement : MonoBehaviour
     public Limits horizontalLimits;
     public Limits verticalLimits;
 
+    Vector3 targetPosition;
+
+    private void Start()
+    {
+        targetPosition = transform.position;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -31,6 +38,10 @@ public class movement : MonoBehaviour
         float newX = Mathf.Clamp(transform.position.x - side, horizontalLimits.min, horizontalLimits.max);
         float newY = Mathf.Clamp(transform.position.y + up, verticalLimits.min, verticalLimits.max);
 
-        transform.position = new Vector3(newX, newY, transform.position.z);
+        targetPosition.x = newX;
+        targetPosition.y = newY;
+
+        transform.position = Vector3.Lerp(transform.position, targetPosition, speed * Time.deltaTime);
+        //transform.position = new Vector3(newX, newY, transform.position.z);
     }
 }
