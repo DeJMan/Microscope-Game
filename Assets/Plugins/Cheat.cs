@@ -10,7 +10,7 @@ public class Cheat : MonoBehaviour
 	private string[] cheatCode2;
 	private int index2;
 	//script objects
-	public Score sc;
+	public GameManager sc;
 
 	void Awake() 
 	{
