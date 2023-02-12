@@ -304,8 +304,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 194.29367, y: 216.92355}
-  m_SizeDelta: {x: 316.1657, y: 411.0007}
+  m_AnchoredPosition: {x: 194.29367, y: 249.75}
+  m_SizeDelta: {x: 316.1657, y: 499.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &350091473
 MonoBehaviour:
@@ -342,7 +342,7 @@ MonoBehaviour:
     m_LineSpacing: 0.8
   m_Text: 'Credits
 
-    
+
 
     Siri
 
@@ -350,7 +350,7 @@ MonoBehaviour:
 
     Programming and art
 
-    
+
 
     DeJMan
 
@@ -359,7 +359,7 @@ MonoBehaviour:
     Programming
     and character design
 
-    
+
 
     KanxBoop
 
@@ -367,7 +367,7 @@ MonoBehaviour:
 
     Music
 
-    
+
 
     Mercurius
     Bink
@@ -376,7 +376,7 @@ MonoBehaviour:
 
     SFX
 
-    
+
 
     Brad Wesson
 
@@ -384,7 +384,7 @@ MonoBehaviour:
 
     SFX
 
-    
+
 
     THE
     bizniss
@@ -393,7 +393,7 @@ MonoBehaviour:
 
     SFX
 
-    
+
 
     harrietniamh
 
