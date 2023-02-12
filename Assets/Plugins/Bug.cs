@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bug : MonoBehaviour
 {
     public float flyspeed = 0.1f;
-	public Score s;
+	public GameManager s;
 	public lookat l;
 	
 	public GameObject pref;
@@ -13,7 +13,7 @@ public class Bug : MonoBehaviour
 	void Start()
 	{
 		GameObject go = GameObject.FindWithTag("manager");
-		s = go.GetComponent<Score>();
+		s = go.GetComponent<GameManager>();
 		GameObject gs = GameObject.FindWithTag("looker");
 		l = gs.GetComponent<lookat>();		
 	}
